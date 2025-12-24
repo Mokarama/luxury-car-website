@@ -1,0 +1,61 @@
+ /*--------------- SCUDERIA ARea-------------- */
+.scuderia-section{
+    background: white;
+}
+ .popular-container-area{
+    display: flex;
+    height:100%;
+}
+.popular-container-area >div:nth-child(1){
+    width:60%;
+    margin:50px 20px;
+    align-content: center;  
+}
+.text-1{
+    border-radius:5px;
+    background-color: white;       
+}
+.popular-title{
+    font-size: 30px;
+    font-weight:700;
+    padding-bottom:5px; 
+}
+.popular-description{
+    width: 550px;
+    padding-bottom:10px;
+}
+
+.text-2 {
+    border-radius:5px;
+    background-color: white;
+    border-bottom: 5px;
+}
+.text-2 li{
+   margin-left: 20px;
+   padding-bottom: 5px;
+}
+.text-3{
+    border-radius:5px;
+    background-color: white;
+    padding-bottom: 5px;
+}
+
+.text-3-description{
+    border-radius:5px;
+    background-color: white;
+    padding-top: 5px;
+}
+.btn{
+    height: 50px;
+    width: 160px;
+   font-size: 20px;
+   color: white;
+   border-radius: 8px;
+   border: none;
+   margin:15px;    
+}
+
+.popular-img img{
+    height:100%;
+    width:100%;
+}
