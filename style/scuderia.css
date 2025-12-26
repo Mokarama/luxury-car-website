@@ -1,32 +1,33 @@
 /* ========== SCUDERIA SECTION ========== */
-
-.scuderia-section{
+.scuderia-section {
   background: #fff;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
-.scuderia-container-area{
+.scuderia-container-area {
+  width: 90%;
   max-width: 1200px;
   margin: auto;
   display: flex;
   align-items: center;
   gap: 40px;
-  padding: 0 40px;
+  flex-wrap: wrap;
 }
 
 /* -------- Text Area -------- */
-.scuderia-container{
+.scuderia-container {
   flex: 1;
+  min-width: 300px;
 }
 
-.scuderia-title{
+.scuderia-title {
   font-size: 32px;
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 15px;
 }
 
-.scuderia-description{
+.scuderia-description {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 25px;
@@ -34,19 +35,20 @@
 }
 
 /* -------- Image Area -------- */
-.scuderia-img{
+.scuderia-img {
   flex: 1;
+  min-width: 300px;
 }
 
-.scuderia-img img{
+.scuderia-img img {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 5px;
 }
 
 /* ========== DISCOVER BUTTON ========== */
-
-.discover-btn-black{
+.discover-btn-black {
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -55,10 +57,11 @@
   letter-spacing: 2px;
   font-weight: 600;
   color: black;
+  margin-top: 15px;
 }
 
-/* underline */
-.discover-btn-black::after{
+/* underline animation */
+.discover-btn-black::after {
   content: "";
   position: absolute;
   left: 0;
@@ -69,12 +72,12 @@
   transition: width 0.4s ease;
 }
 
-.discover-btn-black:hover::after{
+.discover-btn-black:hover::after {
   width: 100%;
 }
 
 /* arrow wrapper */
-.arrow-wrapper{
+.arrow-wrapper {
   position: relative;
   width: 34px;
   height: 34px;
@@ -84,7 +87,7 @@
 }
 
 /* spinning red circle */
-.arrow-wrapper::before{
+.arrow-wrapper::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -93,63 +96,64 @@
   opacity: 0;
 }
 
-.discover-btn-black:hover .arrow-wrapper::before{
+.discover-btn-black:hover .arrow-wrapper::before {
   opacity: 1;
   animation: spin 1s linear infinite;
 }
 
-.arrow-wrapper i{
+.arrow-wrapper i {
   font-size: 18px;
   color: black;
   z-index: 1;
 }
 
-/* animation */
-@keyframes spin{
-  from{ transform: rotate(0deg); }
-  to{ transform: rotate(360deg); }
+/* spinner animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* ========== TABLET (≤1024px) ========== */
-
-@media screen and (max-width: 1024px){
-  .scuderia-container-area{
+@media screen and (max-width: 1024px) {
+  .scuderia-container-area {
     gap: 25px;
-    padding: 0 25px;
   }
 
-  .scuderia-title{
+  .scuderia-title {
     font-size: 26px;
   }
 
-  .scuderia-description{
+  .scuderia-description {
     font-size: 15px;
   }
 }
 
 /* ========== MOBILE (≤640px) ========== */
-
-@media screen and (max-width: 640px){
-  .scuderia-container-area{
+@media screen and (max-width: 640px) {
+  .scuderia-container-area {
     flex-direction: column;
     text-align: center;
   }
 
-  .scuderia-title{
+  .scuderia-title {
     font-size: 22px;
   }
 
-  .scuderia-description{
+  .scuderia-description {
     font-size: 14px;
     padding: 0 10px;
   }
 
-  .discover-btn-black{
+  .discover-btn-black {
     justify-content: center;
     margin-top: 10px;
   }
 
-  .scuderia-img{
-    margin-top: 30px;
+  .scuderia-img {
+    margin-top: 20px;
   }
 }
