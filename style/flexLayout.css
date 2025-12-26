@@ -1,172 +1,108 @@
-
-.flex-section-area>.flex-container{
-    display: flex;
-}
-.flex-img-1{
-    width: 50%;
-background-image: url("../images/img2.avif");
-background-repeat: no-repeat;
-object-fit: cover;
-height: 500px;
-padding-top: 350px;
-padding-left: 320px;
-}
-.flex-img-2{
-width: 50%;
-background-image: url("../images/img3.avif");
-object-fit: cover;
-height: 500px;
-padding-top: 300px;
-padding-left: 290px;
+.flex-section-area > .flex-container{
+  display: flex;
 }
 
+/* common image style */
+.flex-container > div{
+  width: 50%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+}
+
+/* background images */
+.flex-img-1{ background-image: url("../images/img2.avif"); }
+.flex-img-2{ background-image: url("../images/img3.avif"); }
+.flex-img-3{ background-image: url("../images/img4.avif"); }
+.flex-img-4{ background-image: url("../images/img5.avif"); }
+.flex-img-5{ background-image: url("../images/img6.avif"); }
+.flex-img-6{ background-image: url("../images/img7.avif"); }
+
+/* text */
 .big-text{
-   color: white;
-   font-size: 40px;
-
+  color: white;
+  font-size: 40px;
 }
 
 .small-text{
-    color: white;
-   font-size: 25px;  
+  color: white;
+  font-size: 22px;
 }
 
-.flex-img-2>h1{
-   color: white;
-   font-size: 40px;
-
-}
-.flex-img-2>h3{
-    color: white;
-   font-size: 25px;  
-}
-/* ------ */
-.flex-img-3{
-    width: 50%;
-background-image: url("../images/img4.avif");
-background-repeat: no-repeat;
-object-fit: cover;
-height: 500px;
-padding-top: 350px;
-padding-left: 320px;
-padding-top: 350px;
-padding-left: 320px;
-}
-
-.flex-img-4{
- width: 50%;
-background-image: url("../images/img5.avif");
-background-repeat: no-repeat;
-object-fit: cover;
-height: 500px;
-padding-top: 300px;
-padding-left: 290px;
-}
-
-.flex-img-5{
-width: 50%;
-background-image: url("../images/img6.avif");
-background-repeat: no-repeat;
-object-fit: cover;
-height: 500px;
-padding-top: 350px;
-padding-left: 320px;
-}
-
-.flex-img-6{
-width: 50%;
-background-image: url("../images/img7.avif");
-object-fit: cover;
-background-repeat: no-repeat;
-height: 500px;
-padding-top: 300px;
-padding-left: 290px;
-}
-
+/* description area */
 .description-area{
-    background-color: #303030;
-    height: 150px;
-    padding-top: 30px;
-     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  background-color: #303030;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.flex-description{
-    text-align: center;
-    margin-bottom: 10px;
-    color: white;
 
+.flex-description{
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .subscribe-btn{
-   padding: 20px 50px;
-   border-radius: 7px;
-   border: none;
-   font-size: 20px;
-   color: white;
-   background-color: #B01E0A;
+  padding: 16px 45px;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  color: white;
+  background-color: #B01E0A;
+  cursor: pointer;
 }
 
 
 
-@media (max-width: 576px) {
-    
-.flex-section-area>.flex-container{
+@media (max-width: 1024px){
+
+  .flex-container > div{
+    height: 420px;
+    padding: 30px;
+  }
+
+  .big-text{
+    font-size: 32px;
+  }
+
+  .small-text{
+    font-size: 20px;
+  }
+}
+
+
+
+@media (max-width: 576px){
+
+  .flex-section-area > .flex-container{
     flex-direction: column;
-}
-.flex-img-1{
- width: 100%;
- height: 550px;
- padding-top: 350px;
- padding-left: 200px;
-}
-.flex-img-2{
-width: 100%;
-height: 550px;
-padding-top: 300px;
-padding-left: 200px;
-}
+  }
 
-.big-text{
-   font-size: 30px;
-}
+  .flex-container > div{
+    width: 100%;
+    height: 450px;
+    padding: 25px;
+    align-items: flex-start;
+  }
 
-.small-text{
-   color: white;
-   font-size: 25px;  
-}
+  .big-text{
+    font-size: 26px;
+  }
 
+  .small-text{
+    font-size: 18px;
+  }
 
-
-/* ------ */
-.flex-img-3{
-width: 100%;
-padding-top: 350px;
-padding-left: 200px;
-}
-
-.flex-img-4{
-width: 100%;
-height: 550px;
-padding-top: 300px;
-padding-left: 200px;
-}
-
-.flex-img-5{
-width: 100%;
-height: 550px;
-padding-top: 350px;
-padding-left: 200px;
-}
-
-.flex-img-6{
-width: 100%;
-height: 550px;
-padding-top: 300px;
-padding-left: 200px;
-}
-
-
-
+  .subscribe-btn{
+    font-size: 16px;
+    padding: 14px 35px;
+  }
 }
