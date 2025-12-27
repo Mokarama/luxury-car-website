@@ -1,0 +1,120 @@
+/* =================car collection================= */
+
+.flex-section-area > .flex-container{
+  display: flex;
+  gap: 20px;
+}
+
+.flex-container > div{
+  width: 50%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+/* background images */
+.flex-img-1{ background-image: url("../car-images/img1.jpg"); }
+.flex-img-2{ background-image: url("../car-images/img2.jpg"); }
+.flex-img-3{ background-image: url("../car-images/img3.jpg"); }
+.flex-img-4{ background-image: url("../car-images/img4.jpg"); }
+.flex-img-5{ background-image: url("../car-images/img5.jpg"); }
+.flex-img-6{ background-image: url("../car-images/img6.jpg"); }
+.flex-img-7{ background-image: url("../car-images/img7.jpg"); }
+.flex-img-8{ background-image: url("../car-images/img8.jpg"); }
+.flex-img-9{ background-image: url("../car-images/img9.jpg"); }
+.flex-img-10{ background-image: url("../car-images/img10.jpg"); }
+.flex-img-11{ background-image: url("../car-images/img11.jpg"); }
+.flex-img-12{ background-image: url("../car-images/img12.jpg"); }
+.flex-img-13{ background-image: url("../car-images/img13.jpg"); }
+.flex-img-14{ background-image: url("../car-images/img14.jpg"); }
+.flex-img-15{ background-image: url("../car-images/img15.jpg"); }
+.flex-img-16{ background-image: url("../car-images/img16.jpg"); }
+
+/* text */
+.big-text{
+  color: white;
+  font-size: 40px;
+}
+
+.small-text{
+  color: white;
+  font-size: 22px;
+}
+
+.discover{
+  margin-right: 10px;
+  padding-bottom: 20px;
+}
+
+.discover:hover{
+  text-decoration: underline;
+}
+.wrapper{
+  padding: 5px;
+}
+.wrapper:hover{
+  border: 2px solid red;
+  border-radius:100%; 
+}
+
+/* ================= DESCRIPTION ================= */
+
+.description-area{
+  background: #303030;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-description{
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subscribe-btn{
+  padding: 16px 45px;
+  font-size: 18px;
+  background: #B01E0A;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1024px){
+  .flex-container > div{
+    height: 420px;
+    padding: 30px;
+  }
+
+  .big-text{ font-size: 32px; }
+  .small-text{ font-size: 20px; }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 576px){
+  .flex-section-area > .flex-container{
+    flex-direction: column;
+  }
+
+  .flex-container > div{
+    width: 100%;
+    height: 450px;
+    padding: 25px;
+  }
+
+  .big-text{ font-size: 26px; }
+  .small-text{ font-size: 18px; }
+}
