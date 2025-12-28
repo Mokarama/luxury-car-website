@@ -1,25 +1,39 @@
-/* ===== HERO SECTION ===== */
-.reward-section {
+
+.text-container-area{
+  border: 2px solid red;
+}
+.text-container{
+  border: 2px solid #1bf28a;
+}
+.text-container>h1{
+  border: 2px solid rgb(18, 30, 19);
+}
+
+.text-container>p{
+  border: 2px solid rgb(180, 8, 103);
+}
+
+
+/* ===== BRAND SECTION ===== */
+.areas-section {
   position: relative;
   height: 100vh;
-  background: url("../about-images/img4.jpg") center/cover no-repeat;
+  background: url("../about-images/areas.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   padding: 0 80px;
   color: #fff;
- 
-  
 }
 
-/* Dark overlay */
-.reward-section .overlay {
+
+.areas-section .overlay {
   position: absolute;
   z-index: -1;
   background: rgba(0, 0, 0, 0.45);
 }
 
-/* Content */
-.reward-content {
+
+.areas-content {
   position: relative;
   max-width: 600px;
 }
@@ -32,42 +46,42 @@
   margin-bottom: 20px;
 }
 
-.reward-content h1 {
+.areas-content h1 {
   font-size: 64px;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 20px;
 }
 
-.reward-content p {
+.areas-content p {
   font-size: 18px;
   line-height: 1.6;
   max-width: 480px;
 }
 /* ===== Tablet ===== */
 @media screen and (max-width: 1024px) {
-  .reward-section {
+  .areas-section {
     padding: 0 40px;
     height: 80vh;
   }
 
-  .reward-content h1 {
+  .areas-content h1 {
     font-size: 48px;
   }
 }
 
 /* ===== Mobile ===== */
 @media screen and (max-width: 640px) {
-  .reward-section {
+  .areas-section {
     padding: 0 20px;
     height: 70vh;
   }
 
-  .reward-content h1 {
+  .areas-content h1 {
     font-size: 36px;
   }
 
-  .reward-content p {
+  .areas-content p {
     font-size: 15px;
   }
 }
