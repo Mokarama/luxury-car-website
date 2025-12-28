@@ -1,0 +1,87 @@
+/* ========== BRAND SECTION ========== */
+.scuderia-section {
+  background: #fff;
+  padding: 40px 0;
+}
+.scuderia-container-area {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* -------- Text Area -------- */
+.scuderia-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+.scuderia-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.scuderia-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* -------- Image Area -------- */
+.scuderia-img {
+  flex: 1;
+  min-width: 300px;
+}
+
+.scuderia-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+/* ========== TABLET (≤1024px) ========== */
+@media screen and (max-width: 1024px) {
+  .scuderia-container-area {
+    gap: 25px;
+  }
+
+  .scuderia-title {
+    font-size: 26px;
+  }
+
+  .scuderia-description {
+    font-size: 15px;
+  }
+}
+
+/* ========== MOBILE (≤640px) ========== */
+@media screen and (max-width: 640px) {
+  .scuderia-container-area {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .scuderia-title {
+    font-size: 22px;
+  }
+
+  .scuderia-description {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .discover-btn-black {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .scuderia-img {
+    margin-top: 20px;
+  }
+}

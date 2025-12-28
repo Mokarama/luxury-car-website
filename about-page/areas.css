@@ -1,16 +1,23 @@
 
 .text-container-area{
-  border: 2px solid red;
+  padding: 90px 20px;
+  background-color: white;
 }
 .text-container{
-  border: 2px solid #1bf28a;
+
 }
 .text-container>h1{
-  border: 2px solid rgb(18, 30, 19);
+  text-align: center;
+  padding: 20px 0px;
 }
-
+.text-container>h6{
+  color: #d40000;
+  padding: 30px 0px;
+  font-size: 16px;
+}
 .text-container>p{
-  border: 2px solid rgb(180, 8, 103);
+  text-align: center;
+  font-size: 20px;
 }
 
 
